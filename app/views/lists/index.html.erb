@@ -1,0 +1,7 @@
+<ol class="list-group list-group-numbered">
+  <% @lists.each do |list| %>
+    <li class="list-group-item"><%= link_to list.name, list %></li>
+  <% end %>
+</ol>
+
+<%= button_to "Create new list", "new", method: :get %>
